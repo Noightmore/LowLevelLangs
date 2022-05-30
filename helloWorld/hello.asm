@@ -1,8 +1,8 @@
 ; to execute the program: ./hello
 
 section .data ; a used data section
-  nameQuestionMSG db "What is your name? ", 10
-  greetByNameMSG db "Hello, "
+  nameQuestionMSG db "What is your name? ", 10, 0
+  greetByNameMSG db "Hello, ", 0
 
 section .bss
     name resb 16  ; reserves bytes

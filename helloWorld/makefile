@@ -1,8 +1,8 @@
 hello: hello.o
-	ld hello.o	-o	hello
+	ld ./out/hello.o -o	./out/hello
 
 hello.o: hello.asm
-	nasm -f elf64 hello.asm -o hello.o
+	nasm -f elf64 hello.asm -o ./out/hello.o
 
 clean:
-	rm *.out hello
+	rm ./out/*
