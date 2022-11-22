@@ -107,8 +107,7 @@ _start:
             inc edi
             jmp foreachLong
     konec:
-        ; print all values in pole_intu16
-        mov esi, pole_intu16
+        ; TODO: vypsat vsechny inty z pole intu16
 
 
         ; konec programu
