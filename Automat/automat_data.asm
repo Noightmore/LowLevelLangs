@@ -33,3 +33,6 @@ section .data
     ; constants
     set_on equ 1
     set_off equ 0
+
+section .bss
+    user_choice: resb 2

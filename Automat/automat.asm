@@ -16,24 +16,34 @@ _start:
     ; state 0
     ; initialises default states
     ; sets na_give to 1
-    ; then waits for na_has_given_in to be set to 1
     ;---------------------------------------------------------------------------
     state0:
         call _initialiseStates
         mov al, set_on
         mov [na_give], al
+        ; jmp state1
+    ;---------------------------------------------------------------------------
+    ; state 1
+    ; waits for na_has_given_in to be set to 1
+    ;---------------------------------------------------------------------------
+    state1:
         _waitForItemToBePutOnGreenBelt:
-            call clearTerminal
-            mov eax, state0_msg1
-            call sprintLF
+        call clearTerminal
+        mov eax, state0_msg1
+        call sprintLF
 
-
-
-
-    call quit
-
-
-
+        call loadUserInput
+        ; checkIfInputIsOne:
+        mov al, [user_choice]
+        sub al, 48
+        cmp al, set_on
+        jne _waitForItemToBePutOnGreenBelt
+        ; jmp state2
+    state2:
+        call printBeltSystem
+        mov eax, state1_msg1
+        call sprintLF
+        call quit
 
 
 
