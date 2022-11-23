@@ -27,7 +27,7 @@ section .data
     pos1: dd pt7+3
     pos2: dd pt7+17
     pos3: dd pt7+31 ; at this position slowmode activates; end of green belt
-
+    ; TODO: finish all state positions
 
 
 

@@ -39,6 +39,7 @@ _start:
         cmp al, set_on
         jne _waitForItemToBePutOnGreenBelt
         ; jmp state2
+        ; TODO: finish state 1
     state2:
         call printBeltSystem
         mov eax, state1_msg1
