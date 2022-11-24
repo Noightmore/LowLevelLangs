@@ -69,7 +69,7 @@ clearTerminal:
         mov eax, blank_line ; blank line with newline char
         call sprintLF
         inc ebx
-        cmp ebx, 30
+        cmp ebx, 100
         jnz _loopN
     _endLoopN:
     pop ebx
@@ -307,6 +307,8 @@ setBeltState5_left:
 
 setBeltState6:
     push eax
+    mov eax, blank_line
+    call sprintLF
     mov eax, state6_msg1
     call sprintLF
     pop eax

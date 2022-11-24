@@ -13,12 +13,12 @@ section .data
 
     ; half a second
     running_sleep_interval:
-            tv_sec  dd 0
+            tv_sec  dd 1
             tv_nsec dd 500000000
     ; a second
     slow_running_sleep_interval:
-            tv_sec1  dd 1
-            tv_nsec1 dd 0
+            tv_sec1  dd 2
+            tv_nsec1 dd 500000000
 
 section .text
     global _start
@@ -31,19 +31,16 @@ _start:
     ;---------------------------------------------------------------------------
     state0:
         ; set current state to be 0
-        xor al,al
-        mov [state_id],al
+        mov [state_id], byte 0
 
         call _initialiseStates
-        mov al, set_on
-        mov [na_give], al
+        mov [na_give], byte set_on
 
         ; print belt
         mov eax, state_id
         call clearTerminal
         call setItemPositionByState
         call printBeltSystem
-
         ; jmp state1
 
     ;---------------------------------------------------------------------------
