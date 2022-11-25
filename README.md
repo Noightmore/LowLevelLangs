@@ -1,1 +1,1 @@
-# random dumb programs from  me trying to learn x86
+# random dump of programs from my tries to learn x86_64 assembly 
