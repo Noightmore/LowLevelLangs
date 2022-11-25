@@ -40,6 +40,8 @@ _start:
         mov eax, state_id
         call clearTerminal
         call setItemPositionByState
+        mov ebx, state_id
+        call printCurrentStateInfo
         call printBeltSystem
         ; jmp state1
 
@@ -80,6 +82,8 @@ _start:
         mov eax, state_id
         call setItemPositionByState
         call clearTerminal
+        mov ebx, state_id
+        call printCurrentStateInfo
         call printBeltSystem
         ; jmp state2
 
@@ -110,6 +114,8 @@ _start:
         mov eax, state_id
         call setItemPositionByState
         call clearTerminal
+        mov ebx, state_id
+        call printCurrentStateInfo
         call printBeltSystem
         ; jmp state3
 
@@ -138,6 +144,8 @@ _start:
         mov eax, state_id
         call setItemPositionByState
         call clearTerminal
+        mov ebx, state_id
+        call printCurrentStateInfo
         call printBeltSystem
         ; jmp state4
 
@@ -181,6 +189,8 @@ _start:
             mov eax, state_id
             call setItemPositionByState
             call clearTerminal
+            mov ebx, state_id
+            call printCurrentStateInfo
             call printBeltSystem
             ;jmp state5
     state5:
@@ -210,11 +220,13 @@ _start:
             ;jmp _finally5
 
         _finally5:
-        ; print the current state
-        mov eax, state_id
-        call setItemPositionByState
-        call clearTerminal
-        call printBeltSystem
+            ; print the current state
+            mov eax, state_id
+            call setItemPositionByState
+            call clearTerminal
+            mov ebx, state_id
+            call printCurrentStateInfo
+            call printBeltSystem
         ; jmp state6
 
     state6:
@@ -238,6 +250,10 @@ _start:
         finally6:
             ; shut off blue belt
             mov [m_is_running_slowly], byte set_off
+            call clearTerminal
+            mov ebx, state_id
+            call printCurrentStateInfo
+            call printBeltSystem
             mov eax, state_id
             call setItemPositionByState
             _waitForUserToTakeTheItem:

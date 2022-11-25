@@ -42,6 +42,8 @@ section .data
     ;---------------------------------------------------------------------------
     ; general data
     blank_line: db " ", 0
+    current_state_is_msg: db "Current state is: ", 0
+
     ;---------------------------------------------------------------------------
     blank_space: db " ",0
     underscore: db "_",0
@@ -99,6 +101,19 @@ loadUserInput:
     pop ebx
     pop eax
 
+    ret
+
+; current state id is passed as parameter in ebx register
+printCurrentStateInfo:
+    push eax
+    mov eax, current_state_is_msg
+    call sprint
+    xor eax, eax
+    mov al, byte [ebx]
+    call iprintLF
+    mov eax, blank_space
+    call sprintLF
+    pop eax
     ret
 
 printBeltSystem:
