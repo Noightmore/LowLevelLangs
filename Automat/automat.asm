@@ -3,6 +3,8 @@
 ; Run with: ./automat
 
 ; This program is a simple implementation of a finite state machine.
+; jedna se o prasarnu, nejlepsi by to bylo cely prepsat znova
+; kod sotva dodrzuje konvence a pravidla, ale funguje
 
 %include "functions.asm"
 %include "user_interface.asm"
@@ -24,11 +26,6 @@ section .text
     global _start
 
 _start:
-    ;---------------------------------------------------------------------------
-    ; state 0
-    ; initialises default states
-    ; sets na_give to 1
-    ;---------------------------------------------------------------------------
     state0:
         ; set current state to be 0
         mov [state_id], byte 0
@@ -45,10 +42,6 @@ _start:
         call printBeltSystem
         ; jmp state1
 
-    ;---------------------------------------------------------------------------
-    ; state 1
-    ; waits for na_has_given_in to be set to 1
-    ;---------------------------------------------------------------------------
     state1:
         ; increment state_id (whilst preserving the contents of al registry)
         xchg al, [state_id]
