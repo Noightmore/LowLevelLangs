@@ -4,6 +4,8 @@
 global mmap
 global malloc
 
+extern assert_not_null
+
 ; Map new pages into the process.
 ;
 ; @param rdi
@@ -46,6 +48,7 @@ mmap:
     pop rbp
     ret
 
+
 ;------------------------------------------------------------------
 ; Simple implementation of malloc.
 ;
@@ -68,7 +71,7 @@ malloc:
     cmp rax, 0x0
     jne malloc_do_init_done
 
-    mov rdi, 4096000
+    mov rdi, 4096000 ; 4MB
     call mmap
 
     mov [malloc_memory], rax

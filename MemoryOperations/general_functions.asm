@@ -1,6 +1,5 @@
 ; General functions to use in main program
 
-
 global assert_not_null
 global assert_null
 global sleep_ms
