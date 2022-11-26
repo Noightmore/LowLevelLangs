@@ -1,10 +1,6 @@
 ; simple implementation of malloc
 ; just allocates more memory pages
 
-global mmap
-global malloc
-
-extern assert_not_null
 
 section .data
     malloc_init: dq 0
@@ -14,6 +10,11 @@ section .rodata
     mmap_failed: db "mmap failed", 10, 0
 
 section .text
+
+global mmap
+global malloc
+
+;extern assert_not_null
 
 ;----------------------------------------
 ; Map new pages into the process.
