@@ -82,6 +82,8 @@ _start:
        call print
        call exit
 
+    ; mmx registry, nice
+    ;movq mm0, 0x0000000000000000
 
 
 
