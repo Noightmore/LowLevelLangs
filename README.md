@@ -8,3 +8,6 @@ https://man7.org/linux/man-pages
 
 nasm tutor:
 https://asmtutor.com/
+
+another tutorial:
+https://www.tutorialspoint.com/assembly_programming
