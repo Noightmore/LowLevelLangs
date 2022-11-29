@@ -61,34 +61,6 @@ assert_null_end:
     ret
 
 ;------------------------------------------
-; Sleep the current process for the supplied number of milliseconds.
-;
-; @param rdi
-;   Number of milliseconds to sleep for.
-;
-sleep_ms:
-    push rbp
-    mov rbp, rsp
-
-    imul rdi, rdi, 1000000 ; convert supplied ms to ns
-    xor rax, rax
-    ; recreate struct timepec on the stack
-    push rdi ; tv_nsec
-    push rax ; tv_sec
-
-    ; nanosleep syscall
-    mov rax, 35
-    mov rdi, rsp
-    mov rsi, 0x0
-    syscall
-
-    add rsp, 16
-
-    leave
-    ;pop rbp
-    ret
-
-;------------------------------------------
 ; Exit the program.
 ;
 ; @param rdi

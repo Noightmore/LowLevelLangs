@@ -8,7 +8,7 @@
 ;extern malloc
 
 section .data
-    thread_id: db 1
+    thread_id: dq 1
     thread_spawn_count: dq 4
 
     sleep_interval:
@@ -22,8 +22,6 @@ section .bss
 section .text
     global _start
 
-
-;    extern print
 _start:
 
     ; Allocate memory for parking lot
@@ -38,6 +36,7 @@ _start:
     mov rdi, parkingLotMemPTR
     mov rcx, [thread_spawn_count]
     add rcx, rdi ; address of the end of parking lot
+    inc rcx
 
     _populate:
         mov byte [rdi], 48
@@ -50,21 +49,12 @@ _start:
 
     ;sys_fork
     _thread_spawner:
-<<<<<<< HEAD
-;        mov rax, 2
-;        int 0x80
-;
-;        cmp rax, 0
-;        jz child
-         mov rdi, thread_id
-         call print
-=======
         mov rax, 2
         int 0x80
 
         cmp rax, 0
         jz child
->>>>>>> 6a49fc20bb40c7db623a3e9060311aacaead484e
+
 
     parent:
         mov rax, [thread_id]
@@ -74,9 +64,26 @@ _start:
         cmp rax, [thread_spawn_count]
         jne _thread_spawner
 
+        ; wait for all threads to finish
+        mov rax, 61
+        mov rdi, 0
+        int 0x80
+
         call exit
 
     child:
+        _init_child:
+            ; create space for id and wait time
+            mov rdi, 2
+            call malloc
+            mov rsi, rax
+
+
+       ; compute wait amount
+       mov rax, [tv_sec]
+       add rax, [thread_id]
+       mov [tv_sec], rax
+
        mov rax, 162
        mov rbx, sleep_interval
        mov rcx, 0
@@ -86,12 +93,15 @@ _start:
        mov rax, [thread_id]
        mov byte [parkingLotMemPTR], al
 
+
+
        ; print parking lot
-       mov rdi, parkingLotMemPTR
-       call print
        mov rdi, newline
        call print
-       call exit
+       mov rdi, parkingLotMemPTR
+       call print
+       ;call exit
+       jmp child
 
     ; mmx registry, nice
     ;movq mm0, 0x0000000000000000
