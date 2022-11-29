@@ -11,7 +11,7 @@ section .data
     thread_id: db 1
     thread_spawn_count: dq 4
 
-    running_sleep_interval:
+    sleep_interval:
         tv_sec  dd 1
         tv_nsec dd 500000000
 
@@ -50,6 +50,7 @@ _start:
 
     ;sys_fork
     _thread_spawner:
+<<<<<<< HEAD
 ;        mov rax, 2
 ;        int 0x80
 ;
@@ -57,11 +58,18 @@ _start:
 ;        jz child
          mov rdi, thread_id
          call print
+=======
+        mov rax, 2
+        int 0x80
+
+        cmp rax, 0
+        jz child
+>>>>>>> 6a49fc20bb40c7db623a3e9060311aacaead484e
 
     parent:
         mov rax, [thread_id]
         inc rax
-        mov [thread_id], rax
+        xchg [thread_id], rax
 
         cmp rax, [thread_spawn_count]
         jne _thread_spawner
@@ -69,9 +77,9 @@ _start:
         call exit
 
     child:
-       mov eax, 162
-       mov ebx, running_sleep_interval
-       mov ecx, 0
+       mov rax, 162
+       mov rbx, sleep_interval
+       mov rcx, 0
        int 0x80
 
        ; write into parking lot at thread id

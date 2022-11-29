@@ -77,7 +77,7 @@ sleep_ms:
     push rax ; tv_sec
 
     ; nanosleep syscall
-    mov rax, 0x23
+    mov rax, 35
     mov rdi, rsp
     mov rsi, 0x0
     syscall
