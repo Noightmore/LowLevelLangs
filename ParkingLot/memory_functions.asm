@@ -1,8 +1,8 @@
 ; simple implementation of malloc
 ; just allocates more memory pages
 
-global mmap
-global malloc
+;global mmap
+;global malloc
 
 section .data
     malloc_init: dq 0

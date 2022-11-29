@@ -3,8 +3,9 @@
 ; run with: ./main
 
 %include "print_functions.asm"
-%include "malloc.asm"
+%include "memory_functions.asm"
 %include "general_functions.asm"
+;extern malloc
 
 section .data
     thread_id: db 1
@@ -21,7 +22,7 @@ section .bss
 section .text
     global _start
 
-;    extern malloc
+
 ;    extern print
 _start:
 
@@ -48,20 +49,22 @@ _start:
     mov byte [rdi], 0
 
     ;sys_fork
-    ;_thread_spawner:
-        mov rax, 2
-        int 0x80
-
-        cmp rax, 0
-        jz child
+    _thread_spawner:
+;        mov rax, 2
+;        int 0x80
+;
+;        cmp rax, 0
+;        jz child
+         mov rdi, thread_id
+         call print
 
     parent:
         mov rax, [thread_id]
         inc rax
         mov [thread_id], rax
 
-        ;cmp rax, [thread_spawn_count]
-        ;jne _thread_spawner
+        cmp rax, [thread_spawn_count]
+        jne _thread_spawner
 
         call exit
 
@@ -84,6 +87,9 @@ _start:
 
     ; mmx registry, nice
     ;movq mm0, 0x0000000000000000
+
+
+
 
 
 
