@@ -11,3 +11,5 @@ https://asmtutor.com/
 
 another tutorial:
 https://www.tutorialspoint.com/assembly_programming
+
+SIMD: https://www.tommesani.com/MMXPrimer.html
