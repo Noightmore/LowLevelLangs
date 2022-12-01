@@ -29,7 +29,7 @@ mmap:
     mov rbp, rsp
 
     push rdi
-
+    ; map shared memory instead or 32, 4
     mov rax, 0x9 ; mmap kernel code
     mov rdi, 0x0 ; kernel chooses address
     pop rsi ; number of bytes to map
