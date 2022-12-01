@@ -1,7 +1,3 @@
-//
-// Created by rob on 12/1/22.
-//
-
 #ifndef POLOTOVARFACTORY_POLOTOVAR_H
 #define POLOTOVARFACTORY_POLOTOVAR_H
 
