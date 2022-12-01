@@ -1,5 +1,7 @@
 ; Functions that handle printing data to STDOUT
 
+section .text
+
 global print
 global print_num
 
