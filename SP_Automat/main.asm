@@ -51,6 +51,7 @@ _start:
     movd mm1, dword [num_conversion_vec]
     pmaddubsw mm0, mm1
 
+    ; adds all 8 bytes together and
     ; store the result in parsed_num
     movd eax, mm0
     mov bl, al
