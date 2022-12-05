@@ -1,8 +1,15 @@
 
 #include "../HeaderFiles/Polotovar.h"
 
-Polotovar::Polotovar(char *value)
-{
-    this->value = value;
-}
+Polotovar::Polotovar()
+= default;
 
+//char Polotovar::getValue() const
+//{
+//    return *value;
+//}
+
+char Polotovar::getTyp()
+{
+    return 'P';
+}

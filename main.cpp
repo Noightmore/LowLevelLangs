@@ -1,7 +1,16 @@
 #include <iostream>
 
+// notes to ask:
+// proc by bylo dobre pouzivat reference
+// jak je to vlastne s temi slovicky const
+
+
 int main()
 {
-    std::cout << "Hello, World!" << std::endl;
+    int *a;
+    *a = 5;
+
+
+
     return 0;
 }
