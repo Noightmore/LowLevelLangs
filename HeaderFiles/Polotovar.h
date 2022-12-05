@@ -11,7 +11,7 @@ public:
     Polotovar();
     virtual ~Polotovar() = default;
     //virtual Polotovar* clone() = 0; // abstract copy constructor
-    [[maybe_unused]] virtual void print() = 0; // abstract print method
+    [[maybe_unused]] virtual char* print() = 0; // abstract print method
 
     //virtual char getValue() const = 0;
     virtual char getTyp();
