@@ -29,10 +29,25 @@ char *FinalProduct::print()
     char shloubka = *std::to_string(*this->hloubka).c_str();
 
     // create string with all integers
-    char * output = (char *) malloc(sizeof(svyska) + sizeof(ssirka) + sizeof(shloubka) + 3);
+    char * output = (char *) malloc(sizeof(svyska) + sizeof(ssirka) + sizeof(shloubka) + 2);
+
+
     for(char i=0; i<3; i++)
     {
-
+        if(i==0)
+        {
+            *(output+i) = svyska;
+        }
+        else if(i==1)
+        {
+            *(output + i) = ssirka;
+        }
+        else if(i==2)
+        {
+            *(output + i) = shloubka;
+            break;
+        }
+        *(output+i+1) = ' ';
     }
 
     return "";

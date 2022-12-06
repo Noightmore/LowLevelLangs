@@ -1,6 +1,3 @@
-//
-// Created by rob on 12/5/22.
-//
 
 #include "../HeaderFiles/Stroj.h"
 
@@ -53,7 +50,7 @@ void Stroj::addPolotovar(Polotovar *polotovar) // nebylo by zde lepsi kopirovani
     if(first_a != nullptr && first_b != nullptr && first_c != nullptr)
     {
         // dotaz 2
-
+        // TODO - vytvorit novy polotovar
     }
 
 }
@@ -63,9 +60,10 @@ int Stroj::checkDepthOfStack()
     return this->stack->size(); // ???????????????????
 }
 
-Stroj *Stroj::clone() // vraci ukazatel na novy stroj
+Stroj *Stroj::clone() const // vraci ukazatel na novy stroj
 {
     // malloc space for new stroj
+    // v c++ se nepouziva malloc, ale new a reference (bezpecnejsi pointery)
     auto *new_stroj = (Stroj *) malloc(sizeof(Stroj));
     *new_stroj = *this;
     new_stroj->stack->~stack(); // musime marknout stary stack k dealokaci
@@ -77,11 +75,12 @@ Stroj *Stroj::clone() // vraci ukazatel na novy stroj
     return new_stroj; // if malloc does not fail else nullptr
 }
 
-Stroj *Stroj::operator=(Stroj *stroj) // nestaci pouzivat proste pointery oproti referencim?
+Stroj *Stroj::operator=(const Stroj *stroj) // nestaci pouzivat proste pointery oproti referencim?
 {
     Stroj *str = stroj->clone();
     return str;
 }
 
-
+// const v parametrech metody = nemenna hodnota, nelze zmenit pointer
+// const za parametry metody
 

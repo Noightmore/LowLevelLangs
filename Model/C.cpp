@@ -15,7 +15,7 @@ C::~C()
     delete hloubka;
 }
 
-void C::print()
+char * C::print()
 {
     std::cout << "C: " << *hloubka << std::endl;
 }

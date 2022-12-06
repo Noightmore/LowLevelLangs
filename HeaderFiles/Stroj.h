@@ -6,6 +6,7 @@
 #define POLOTOVARFACTORY_STROJ_H
 
 #include <stack>
+#include <chrono>
 #include "Polotovar.h"
 #include "A.h"
 #include "B.h"
@@ -19,14 +20,15 @@ private:
     A *first_a;
     B *first_b;
     C *first_c;
+    //std::chrono::time_point<std::chrono::system_clock> start_time;
 
     int checkDepthOfStack();
 public:
     Stroj();
     ~Stroj();
-    Stroj* clone();
+    Stroj* clone() const;
     void addPolotovar(Polotovar *polotovar);
-    Stroj *operator = (Stroj *stroj);
+    Stroj *operator = (const Stroj *stroj);
 };
 
 

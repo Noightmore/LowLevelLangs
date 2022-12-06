@@ -20,7 +20,7 @@ Polotovar* A::clone()
     return new A(new int(*vyska));
 }
 
-void A::print()
+char * A::print()
 {
     std::cout << "A: " << *vyska << std::endl;
 }

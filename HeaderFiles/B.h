@@ -11,12 +11,12 @@
 class B : public Polotovar
 {
 private:
-    int *sirka;
+    int *sirka; // privatni atributy ulozene jako pointery nedava moc smysl
 public:
     explicit B(int *sirka);
     ~B() override;
-    Polotovar* clone() override;
-    void print() override;
+    Polotovar* clone() ;
+    char * print() override;
     char getTyp() override;
     int getSirka() const;
 };

@@ -20,7 +20,7 @@ Polotovar* B::clone()
     return new B(new int(*sirka));
 }
 
-void B::print()
+char * B::print()
 {
     std::cout << "B: " << *sirka << std::endl;
 }
