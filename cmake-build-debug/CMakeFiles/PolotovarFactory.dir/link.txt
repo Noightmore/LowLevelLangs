@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/PolotovarFactory.dir/main.cpp.o CMakeFiles/PolotovarFactory.dir/Model/Polotovar.cpp.o CMakeFiles/PolotovarFactory.dir/Model/A.cpp.o CMakeFiles/PolotovarFactory.dir/Model/B.cpp.o CMakeFiles/PolotovarFactory.dir/Model/C.cpp.o CMakeFiles/PolotovarFactory.dir/Model/Stroj.cpp.o CMakeFiles/PolotovarFactory.dir/Model/FinalProduct.cpp.o -o PolotovarFactory 
