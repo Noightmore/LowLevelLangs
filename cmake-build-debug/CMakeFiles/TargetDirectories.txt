@@ -1,3 +1,0 @@
-/home/rob/Programming/c/CPlusPlus/cmake-build-debug/CMakeFiles/PolotovarFactory.dir
-/home/rob/Programming/c/CPlusPlus/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/rob/Programming/c/CPlusPlus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
