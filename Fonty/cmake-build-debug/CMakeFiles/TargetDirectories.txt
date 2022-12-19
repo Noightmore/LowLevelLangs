@@ -1,3 +1,0 @@
-/home/rob/Programming/c/CPlusPlus/Fonty/cmake-build-debug/CMakeFiles/Fonty.dir
-/home/rob/Programming/c/CPlusPlus/Fonty/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/rob/Programming/c/CPlusPlus/Fonty/cmake-build-debug/CMakeFiles/rebuild_cache.dir
