@@ -1,4 +1,4 @@
-# random dump of programs from my tries to learn x86_64 assembly 
+# Random dump of programs from my tries to learn x86_64 assembly 
 
 nasm tutor:
 https://asmtutor.com/
