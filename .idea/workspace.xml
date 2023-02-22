@@ -1,23 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakePresetLoader">{
-  &quot;useNewFormat&quot;: true
-}</component>
-  <component name="CMakeReloadState">
-    <option name="reloaded" value="true" />
-  </component>
-  <component name="CMakeRunConfigurationManager">
-    <generated>
-      <config projectName="PolotovarFactory" targetName="PolotovarFactory" />
-    </generated>
-  </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ccbb2f0-2870-446f-930c-ce6ceb01e88e" name="Changes" comment="bruh bruh bruh" />
+    <list default="true" id="ba75caa3-5851-4d6a-9675-13cf4849dd62" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PolotovarFactory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonty/.idea/Fonty.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonty/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonty/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonty/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonty/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonty/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonty/Models/ColorSetter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonty/Models/FontSetter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonty/Models/SetRedColor.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonty/Models/SetRedColor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonty/Models/Substring.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonty/Models/Substring.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonty/Models/TextBlock.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonty/Models/TextBlock.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonty/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HeaderFiles/A.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HeaderFiles/B.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HeaderFiles/C.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HeaderFiles/FinalProduct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HeaderFiles/Polotovar.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HeaderFiles/Stroj.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/A.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/B.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/C.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/FinalProduct.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Polotovar.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Stroj.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,14 +55,10 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2IXgdLdx0X6meVZTveRiZIcgTfM" />
+  <component name="ProjectId" id="2M73ilncxatEOQLPL1mHlkBuSbu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,55 +74,19 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="PolotovarFactory" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PolotovarFactory" TARGET_NAME="PolotovarFactory" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PolotovarFactory" RUN_TARGET_NAME="PolotovarFactory">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4ccbb2f0-2870-446f-930c-ce6ceb01e88e" name="Changes" comment="" />
-      <created>1670333427472</created>
+      <changelist id="ba75caa3-5851-4d6a-9675-13cf4849dd62" name="Changes" comment="" />
+      <created>1677104922854</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1670333427472</updated>
-      <workItem from="1670333428882" duration="4818000" />
-      <workItem from="1670931347100" duration="50000" />
+      <updated>1677104922854</updated>
+      <workItem from="1677104924681" duration="1000" />
     </task>
-    <task id="LOCAL-00001" summary="bruh bruh bruh">
-      <created>1670338007554</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1670338007554</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="bruh bruh bruh" />
-    <option name="LAST_COMMIT_MESSAGE" value="bruh bruh bruh" />
   </component>
 </project>

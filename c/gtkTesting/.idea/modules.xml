@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/CPlusPlus.iml" filepath="$PROJECT_DIR$/.idea/CPlusPlus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/gtkTesting.iml" filepath="$PROJECT_DIR$/.idea/gtkTesting.iml" />
     </modules>
   </component>
 </project>
