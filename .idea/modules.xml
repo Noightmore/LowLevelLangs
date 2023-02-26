@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/CPlusPlus.iml" filepath="$PROJECT_DIR$/.idea/CPlusPlus.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/randomAssemblyProjects.iml" filepath="$PROJECT_DIR$/.idea/randomAssemblyProjects.iml" />
+>>>>>>> second/master
     </modules>
   </component>
 </project>
