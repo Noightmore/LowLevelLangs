@@ -1,15 +1,15 @@
-#include "headers/currency.h"
+#include "headers/Currency.h"
 
 namespace bank::models
 {
 
-    currency::currency(std::string *type, long double *amount)
+    Currency::Currency(std::string *type, long double *amount)
     {
         this->type = type;
         this->amount = amount;
     }
 
-    currency::~currency()
+    Currency::~Currency()
     {
         delete this->type;
         delete this->amount;

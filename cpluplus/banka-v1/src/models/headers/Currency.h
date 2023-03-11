@@ -5,15 +5,15 @@
 
 namespace bank::models
 {
-    class currency
+    class Currency
     {
         private:
                 std::string* type;
                 long double* amount;
 
         public:
-                currency(std::string* type, long double* amount);
-                ~currency();
+                Currency(std::string* type, long double* amount);
+                ~Currency();
     };
 
 }
