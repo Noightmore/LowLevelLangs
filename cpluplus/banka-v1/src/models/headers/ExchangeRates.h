@@ -8,6 +8,8 @@ namespace bank::models
 {
     class ExchangeRates : public Currency
     {
+        private:
+            double exchangeRate; // exchange rate from this currency to the base currency CZK
         public:
             ExchangeRates();
             ~ExchangeRates();

@@ -40,6 +40,7 @@ namespace bank::services
             this->host_ip_address = this->geHostIpAddress();
 
             char* requestMethod = getenv("REQUEST_METHOD");
+
             if (requestMethod == nullptr)
             {
                     std::cerr << "Error getting request method.\n";
